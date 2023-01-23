@@ -20,9 +20,9 @@ const Sidebar = () => {
       <div className='center'>
         <ul>
             <p className="title">MAIN</p>
-            <li><DashboardIcon className='icon' /><span>Dashboard</span></li>
+            <li><DashboardIcon className='icon' /> <a href="/"><span>Dashboard</span></a></li>
             <p className="title">LISTS</p>
-            <li><PersonIcon className='icon'/><span>Users</span></li>
+            <li><PersonIcon className='icon'/><a href="/users"><span>Users</span></a></li>
             <li><ProductionQuantityLimitsIcon className='icon'/><span>Products</span></li>
             <li><ShoppingCartCheckoutIcon className='icon'/><span>Orders</span></li>
             <li><RoomServiceIcon className='icon'/><span>Delivery</span></li>
