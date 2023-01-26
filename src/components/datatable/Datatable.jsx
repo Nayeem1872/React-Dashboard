@@ -7,13 +7,28 @@ import { userColumns, userRows } from '../../Datatablesource';
 
 
 const Datatable = () => {
+
+  const actionColumn=[
+    {field:"action",
+      headerName:"Action",
+      width:200,
+      renderCell:()=>{
+        return(
+          <div className='cellAction'>
+            <div className='viewButton'>View</div>
+            <div className='deleteButton'>delete</div>
+          </div>
+        )
+      }
+  }
+  ]
   return (
     <div className='datatable'>
       <DataGrid
     rows={userRows}
-    columns={userColumns}
-    pageSize={5}
-    rowsPerPageOptions={[5]}
+    columns={userColumns.concat(actionColumn)}
+    pageSize={8}
+    rowsPerPageOptions={[8]}
     checkboxSelection
   />
   </div>

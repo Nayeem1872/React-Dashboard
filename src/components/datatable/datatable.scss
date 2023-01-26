@@ -15,3 +15,45 @@
     }
 
 }
+
+
+
+.cellWithStatus{
+    padding: 5px;
+    border-radius: 5px;
+    &.active{
+        background-color: rgb(255, 127, 0, 0.05);
+        color: green;
+    }
+    &.pending{
+        background-color: rgb(255, 127, 0, 0.05);
+        color: goldenrod;
+    }
+    &.passive{
+        background-color: rgb(255, 127, 0, 0.05);
+        color: crimson;
+    }
+}
+
+
+.cellAction{
+    display: flex;
+    align-items: center;
+    gap:15px;
+
+    .viewButton{
+        padding: 2px 5px;
+        border-radius: 5px;
+        color: darkblue;
+        border: 1px dotted darkblue;
+        cursor: pointer;
+    }
+    .deleteButton{
+        padding: 2px 5px;
+        border-radius: 5px;
+        color: crimson;
+        border: 1px dotted rgb(153, 72, 88);
+        cursor: pointer;
+    }
+
+}
